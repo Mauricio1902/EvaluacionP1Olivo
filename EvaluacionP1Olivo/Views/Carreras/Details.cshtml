@@ -1,0 +1,30 @@
+﻿@model EvaluacionP1Olivo.Models.Carrera
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Carrera</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.nombre_carrera)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.nombre_carrera)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.numero_semestres)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.numero_semestres)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.CarreraNum">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
